@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import 'leaflet/dist/leaflet.css';
 import { useState } from 'react';
 

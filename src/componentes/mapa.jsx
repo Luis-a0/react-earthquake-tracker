@@ -51,6 +51,7 @@ function Mapa({ selectedTimeSpan }) {
                                 icon={personalIcon}
                             >
                                 <Popup>
+                                    Fecha: {new Date(earthquake.properties.time).toLocaleString()} 
                                     Lugar: {earthquake.properties.place}
                                     <br />
                                     Magnitud: {earthquake.properties.mag}

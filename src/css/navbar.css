@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+  
+.label {
+    margin-right: 10px;
+}
+  
+.select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+  
+.hr {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+  
+.selectedTimeSpan {
+    text-align: center;
+    margin-top: 10px;
+}
