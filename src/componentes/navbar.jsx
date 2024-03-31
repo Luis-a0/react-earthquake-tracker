@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import '../css/navbar.css';
+import { FaGithub } from 'react-icons/fa';
 
 function Navbar({ handleTimeSpanChange }){
     const [selectedTimeSpan, setselectedTimeSpan] = useState('hour');
@@ -28,7 +29,9 @@ function Navbar({ handleTimeSpanChange }){
                 </select>
             </label>
             <hr className='hr'/>
-            <p className='selectedTimeSpan'>Tiempo seleccionado: {selectedTimeSpan}</p>
+            <a href="https://github.com/Luis-a0/react-earthquake-tracker" className="github-link" target="_blank"> 
+                <FaGithub className="github-icon" /> 
+            </a>
         </div>
     </>
     );
