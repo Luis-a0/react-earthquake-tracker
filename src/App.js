@@ -7,15 +7,21 @@ import Navbar from './componentes/navbar';
 
 function App() {
   const [selectedTimeSpan, setSelectedTimeSpan] = useState('hour');
+  const [selectedMagnitude, setSelectedMagnitude] = useState(null);
+
 
   const handleTimeSpanChange = (value) => {
     setSelectedTimeSpan(value);
   };
+
+  const handleMagnitudeChange = (value) => {
+    setSelectedMagnitude(parseFloat(value));
+  };
     
   return (
     <div className="App">
-      <Navbar handleTimeSpanChange={handleTimeSpanChange} />
-      <Mapa selectedTimeSpan={selectedTimeSpan} />
+      <Navbar handleTimeSpanChange={handleTimeSpanChange} handleMagnitudeChange={handleMagnitudeChange} />
+      <Mapa selectedTimeSpan={selectedTimeSpan} selectedMagnitude={selectedMagnitude} />
     </div>
   );
 }
